@@ -6,15 +6,11 @@ class App < Sinatra::Base
     @name = params[:name].reverse
   end
 
-  # get '/square/:number' do
-  #   number = params[:number]
-  #   number.to_i ** 2
-  #   number.to_s
-  # end
 
   get '/square/:number' do
     number = params[:number]
-    (number.to_i**2).to_s
+    total = (number.to_i ** 2)
+    total.to_s
   end
 
 
